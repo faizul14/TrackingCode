@@ -29,7 +29,11 @@
 //     return dna.join('')
 // }
 
-const dnaStrand = ([...dna]) => dna.map(a => a = a === 'A' ? 'T' : a === 'T' ? 'A' : a === 'C' ? 'G' : 'C').join('')
+// const dnaStrand = ([...dna]) => dna.map(a => a = a === 'A' ? 'T' : a === 'T' ? 'A' : a === 'C' ? 'G' : 'C').join('')
+
+const DNA = { A: 'T', T: 'A', C: 'G', G: 'C' }
+const dnaStrand = ([...dna]) => dna.map(key => DNA[key]).join('');
 
 
-console.log(dnaStrand('AAAA'));
+
+console.log(dnaStrand('ACGA'));
