@@ -1,6 +1,5 @@
-
 // FMP Track Coding Chalenge 2024
-// Day 11/366
+// Day 12/366
 // https://www.codewars.com/kata/5266876b8f4bf2da9b000362/
 
 function likes(names) {
