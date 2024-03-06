@@ -2,19 +2,22 @@
 // Day 15/366
 // https://www.codewars.com/kata/546f922b54af40e1e90001da
 
-function alphabetPosition(text) {
-    text = text.toLowerCase().split(' ').join('')
-    const arrAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
-    let result = []
-    for (let i = 0; i < text.length; i++) {
-        for (let j = 0; j < arrAlphabet.length; j++) {
-            if (arrAlphabet[j] === text[i]) {
-                result.push(j + 1)
-                break;
-            }
-        }
-    }
-    return result.join(' ');
-}
+// function alphabetPosition(text) {
+//     text = text.toLowerCase().split(' ').join('')
+//     const arrAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+//     let result = []
+//     for (let i = 0; i < text.length; i++) {
+//         for (let j = 0; j < arrAlphabet.length; j++) {
+//             if (arrAlphabet[j] === text[i]) {
+//                 result.push(j + 1)
+//                 break;
+//             }
+//         }
+//     }
+//     return result.join(' ');
+// }
+
+const alphabetPosition = text => text.toLowerCase().replace(/[^a-z]/g, '').split('').map(el => el.charCodeAt() - 96).join(' ')
+
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));
