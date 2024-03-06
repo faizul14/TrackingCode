@@ -15,7 +15,7 @@
 // }
 
 // insigth baru dari diskusi
-// const longest = (s1, s2) => [...s1, ...s2].sort().filter((element, index, array) => element !== array[index - 1] ? element : '').join('')
+const longest = (s1, s2) => [...s1, ...s2].sort().filter((element, index, array) => element !== array[index - 1] ? element : '').join('')
 
 // ini bisa cuman kurang efisien karena terlalu banyak prores
 // const longest = (s1, s2) => [...s1, ...s2].sort().map((element, index, array) => element !== array[index - 1] ? element : '').filter(a => a !== '').join('')
