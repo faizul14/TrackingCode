@@ -19,4 +19,14 @@
 // const test = "aaaa"
 // console.log(test[0].toUpperCase());
 
+// console.log(
+//     '1,2,2,3,3'
+//         .replace(/[^1-9a-zA-Z]/g, '')
+//         .split('')
+//         .filter((element, index, array) => element !== array[index - 1])
+// );
+
+
+console.log(2360688 / 46288);
+
 
