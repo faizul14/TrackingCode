@@ -1,5 +1,5 @@
 // FMP Track Coding Chalenge 2024
-// Day 15/366  => need fixing (now i am headeach)
+// Day 15/366
 // https://www.codewars.com/kata/517abf86da9663f1d2000003
 
 
