@@ -9,9 +9,14 @@
 // console.log('Hello world'.replace('world', 'fmp'));
 
 // RegExp
-let text = 'Hello you Wo9rld'
-console.log(text.replace(/[eod]/ig, 'fmp'));
-console.log(text.match(/(e|o|d)/g));
+// let text = 'Hello you Wo9rld fae&*'
+// console.log(text.replace(/[eod]/ig, 'fmp'));
+// console.log(text.match(/(e|o|d)/g));
 
+// console.log(text.match(/\W/g));
+
+
+// const test = "aaaa"
+// console.log(test[0].toUpperCase());
 
 
