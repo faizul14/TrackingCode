@@ -1,5 +1,5 @@
 // FMP Track Coding Chalenge 2024
-// Day 14/366 => this chalenge still not finish (maybe i am need a time for think)
+// Day 14/366
 // https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/
 
 // const persistence = (num) => {
