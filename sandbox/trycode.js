@@ -29,4 +29,14 @@
 
 console.log(2360688 / 46288);
 
+console.log(Math.sqrt(625));
+console.log(Math.sqrt(676));
+console.log(Math.round(Math.sqrt(155) % 1));
+
+
+console.log(/[^0-9]/g.test(20));
+
+
+
+
 
