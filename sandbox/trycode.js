@@ -27,14 +27,17 @@
 // );
 
 
-console.log(2360688 / 46288);
+// console.log(2360688 / 46288);
 
-console.log(Math.sqrt(625));
-console.log(Math.sqrt(676));
-console.log(Math.round(Math.sqrt(155) % 1));
+// console.log(Math.sqrt(625));
+// console.log(Math.sqrt(676));
+// console.log(Math.round(Math.sqrt(155) % 1));
 
 
-console.log(/[^0-9]/g.test(20));
+// console.log(/[^0-9]/g.test(20));
+
+
+console.log(('aaaxbbbbyyhwawiwjjjwwm'.match(/[^a-m]/ig) || []).length);
 
 
 
