@@ -39,7 +39,11 @@
 
 // console.log(('aaaxbbbbyyhwawiwjjjwwm'.match(/[^a-m]/ig) || []).length);
 
-console.log(eval('1+2'));
+// console.log(eval('1+2'));
+
+
+console.log(/[^0-9]/g.test('2345'));
+
 
 
 
