@@ -42,7 +42,14 @@
 // console.log(eval('1+2'));
 
 
-console.log(/[^0-9]/g.test('2345'));
+// console.log(/[^0-9]/g.test('2345'));
+
+// const arr = [false, 1, 0, 1, 2, 0, 1, 3, "a"]
+// arr.splice(2, 1)
+// console.log(arr);
+// console.log('0'.repeat(2));
+
+
 
 
 
