@@ -49,9 +49,10 @@
 // console.log(arr);
 // console.log('0'.repeat(2));
 
-console.log('abcde'.split('').map((el, index, array) => index % 2 === 1 ? `${el}4`: el, '').join('').split('4').map((el) => el.length !== 2 ? el.concat('_'): el));
+// console.log('abcde'.split('').map((el, index, array) => index % 2 === 1 ? `${el}4`: el, '').join('').split('4').map((el) => el.length !== 2 ? el.concat('_'): el));
 
 
+console.log((6).toString(2));
 
 
 
