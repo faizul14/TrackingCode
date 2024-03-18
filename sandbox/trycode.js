@@ -52,7 +52,9 @@
 // console.log('abcde'.split('').map((el, index, array) => index % 2 === 1 ? `${el}4`: el, '').join('').split('4').map((el) => el.length !== 2 ? el.concat('_'): el));
 
 
-console.log((6).toString(2));
+// console.log((6).toString(2));
+
+console.log([-5, 8, 6, -3, 4].sort((a, b) => a - b));
 
 
 
