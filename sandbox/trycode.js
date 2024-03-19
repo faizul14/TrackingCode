@@ -56,6 +56,16 @@
 
 console.log([-5, 8, 6, -3, 4].sort((a, b) => a - b));
 
+console.log(
+    'abcdf'
+        .split('')
+        .map(a => a.charCodeAt() - 96)
+);
+
+// convert unicode to chart
+console.log(String.fromCharCode(97));
+
+
 
 
 
