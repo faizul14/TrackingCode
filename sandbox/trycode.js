@@ -68,6 +68,8 @@ console.log(String.fromCharCode(97));
 
 console.log(6*0.5);
 
+console.log('This!'.split('').reverse().join(''));
+
 
 
 
