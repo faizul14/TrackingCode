@@ -66,6 +66,9 @@ console.log(
 // convert unicode to chart
 console.log(String.fromCharCode(97));
 
+console.log(6*0.5);
+
+
 
 
 
