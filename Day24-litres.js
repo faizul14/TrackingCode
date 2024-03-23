@@ -8,6 +8,8 @@
 //     return time < 1 ? 0 : Math.floor(time);
 // }
 
-const litres = time => Math.floor(time) * 0.5 < 1 ? 0 : Math.floor(time * 0.5)
+// const litres = time => Math.floor(time) * 0.5 < 1 ? 0 : Math.floor(time * 0.5)
+
+const litres = time => Math.floor(time / 2)
 
 console.log(litres(11.8));
