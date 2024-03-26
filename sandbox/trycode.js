@@ -66,9 +66,13 @@ console.log(
 // convert unicode to chart
 console.log(String.fromCharCode(97));
 
-console.log(6*0.5);
+console.log(6 * 0.5);
 
 console.log('This!'.split('').reverse().join(''));
+
+
+console.log(/sumo/ig.test('mo'));
+
 
 
 
