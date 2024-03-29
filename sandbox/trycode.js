@@ -54,6 +54,8 @@
 
 // convert number to binner
 console.log((1234).toString(2));
+console.log(parseInt('0010', 2));
+
 
 console.log([-5, 8, 6, -3, 4].sort((a, b) => a - b));
 
