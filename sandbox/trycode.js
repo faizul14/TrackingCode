@@ -75,6 +75,10 @@ console.log('This!'.split('').reverse().join(''));
 
 console.log(/sumo/ig.test('mo'));
 
+console.log(
+    'lorem ipsum dolor is amer'.split(' ').reverse().join(' ')
+);
+
 
 
 
