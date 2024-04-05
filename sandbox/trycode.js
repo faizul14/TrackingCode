@@ -52,32 +52,48 @@
 // console.log('abcde'.split('').map((el, index, array) => index % 2 === 1 ? `${el}4`: el, '').join('').split('4').map((el) => el.length !== 2 ? el.concat('_'): el));
 
 
-// convert number to binner
-console.log((1234).toString(2));
-console.log(parseInt('0010', 2));
+// // convert number to binner
+// console.log((1234).toString(2));
+// console.log(parseInt('0010', 2));
 
 
-console.log([-5, 8, 6, -3, 4].sort((a, b) => a - b));
+// console.log([-5, 8, 6, -3, 4].sort((a, b) => a - b));
+
+// console.log(
+//     'abcdf'
+//         .split('')
+//         .map(a => a.charCodeAt() - 96)
+// );
+
+// // convert unicode to chart
+// console.log(String.fromCharCode(97));
+
+// console.log(6 * 0.5);
+
+// console.log('This!'.split('').reverse().join(''));
+
+
+// console.log(/sumo/ig.test('mo'));
+
+// console.log(
+//     'lorem ipsum dolor is amer'.split(' ').reverse().join(' ')
+// );
+
 
 console.log(
-    'abcdf'
-        .split('')
-        .map(a => a.charCodeAt() - 96)
+    'z'.charCodeAt() - 96,
+    'b'.charCodeAt() - 96,
+    'A'.charCodeAt() - 38
 );
-
-// convert unicode to chart
-console.log(String.fromCharCode(97));
-
-console.log(6 * 0.5);
-
-console.log('This!'.split('').reverse().join(''));
-
-
-console.log(/sumo/ig.test('mo'));
 
 console.log(
-    'lorem ipsum dolor is amer'.split(' ').reverse().join(' ')
+    Math.round(17 / 3)
 );
+
+console.log(
+    String.fromCharCode(96 + 6)
+);
+
 
 
 
