@@ -80,20 +80,48 @@
 // );
 
 
-console.log(
-    'z'.charCodeAt() - 96,
-    'b'.charCodeAt() - 96,
-    'A'.charCodeAt() - 38
-);
+// console.log(
+//     'z'.charCodeAt() - 96,
+//     'b'.charCodeAt() - 96,
+//     'A'.charCodeAt() - 38
+// );
+
+// console.log(
+//     Math.round(17 / 3)
+// );
+
+// console.log(
+//     String.fromCharCode(96 + 6)
+// );
+
+
+const resultChar = (charOne, charTwo) => {
+    const findMinimum = charOne < charTwo ? charOne : charTwo
+    let countChar = Math.abs(charValue(charOne) - charValue(charTwo)) + 1
+    countChar = Math.ceil(countChar / 2)
+    console.log(countChar);
+
+
+    console.log(
+        charValue(findMinimum) + countChar - 1,
+        String.fromCharCode(charValue(findMinimum) + countChar - 1 + 96)
+    );
+
+    return String.fromCharCode(97)
+}
+
+const charValue = char => {
+    return char.charCodeAt() - 96
+}
 
 console.log(
-    Math.round(17 / 3)
+    // charValue('a')
+    // resultChar('j', 'a'),
+    // resultChar('l', 'o'),
+    // resultChar('t', 'f'),
+    // resultChar('k', 'n')
+    resultChar('a', 'a')
 );
-
-console.log(
-    String.fromCharCode(96 + 6)
-);
-
 
 
 

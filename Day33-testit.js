@@ -1,18 +1,37 @@
 // FMP Track Coding Chalenge 2024
-// Day 33/366 => still nedd fixing and this kata level 7 kyuu but fell not, LOL 
+// Day 33/366
 // https://www.codewars.com/kata/56d9292cc11bcc3629000533/
 
-function testit(s) {
-    const length = s.length % 2 === 0 ? (s.length / 2) : (Math.floor(s.length / 2))
-    //return s?
-    //return s.substr(0,1) ?
-    //return s.substr(0,s.length/2) ?
-    console.log(
-        length
-    );
-
-    return s.substring(0, length === 0 ? 1 : length)
+const resultChar = (charOne, charTwo) => {
+    const findMinimum = charOne < charTwo ? charOne : charTwo
+    let countChar = Math.abs(charValue(charOne) - charValue(charTwo)) + 1
+    countChar = Math.ceil(countChar / 2)
+    return String.fromCharCode(charValue(findMinimum) + (countChar - 1) + 96)
 }
+
+const charValue = char => {
+    return (char.charCodeAt() - 96)
+}
+
+function testit(s) {
+    let result = ''
+    const length = s.length % 2 === 0 ? s.length : s.length - 1
+
+    for (let i = 0; i < length; i += 2) {
+        const elementResult = resultChar(s[i], s[i + 1])
+        result = result.concat(elementResult)
+    }
+    if (s.length % 2 === 1) {
+        result = result.concat(s[length])
+    }
+    return result
+}
+
+// feel stupid on compare this solution, LOL 
+// function testit(s) {
+//     return s.replace(/../g, (s) =>
+//         String.fromCharCode((s.charCodeAt(0) + s.charCodeAt(1)) / 2));
+// }
 
 console.log(
     testit('bc'),
@@ -20,89 +39,3 @@ console.log(
     testit('a'),
     testit('hheellllo')
 );
-
-
-console.log(
-    'z'.charCodeAt() - 96
-);
-
-console.log(
-    String.fromCharCode(Math.abs((4 + 96) - (26 + 96)) + 96),
-);
-
-let a = 'abcsefghijklm'
-
-
-// console.log(
-//     'RevoUpdate'.substring(0, 7)
-// );
-
-// console.log(1 % 2);
-
-
-
-// let a = 'aaa'
-// console.log(
-//     a.substring(0,a.length/2),
-
-//     a.substring()
-// );
-
-// console.log(
-//     Math.floor(1.5)
-// );
-
-// ==========================================================
-/**
- * Test Results:
-Log
-
--------- Basic Test --------
-
-s=""
-Test Passed: Value == '\'\''
-Log
-<font color="#CD7F32">s="a"</font>
-a
-Test Passed: Value == '\'a\''
-Log
-<font color="#CD7F32">s="b"</font>
-b
-Test Passed: Value == '\'b\''
-Log
-<font color="#CD7F32">s="aa"</font>
-aa
-Test Passed: Value == '\'a\''
-Log
-<font color="#CD7F32">s="ab"</font>
-ab
-Test Passed: Value == '\'a\''
-Log
-<font color="#CD7F32">s="bc"</font>
-bc
-Test Passed: Value == '\'b\''
-Log
-<font color="#CD7F32">s="aaaa"</font>
-aaaa
-Test Passed: Value == '\'aa\''
-Log
-<font color="#CD7F32">s="aaaaaa"</font>
-aaaaaa
-Test Passed: Value == '\'aaa\''
-Log
-<font color="#CD7F32">s="abab"</font>
-abab
-Expected: '\'aa\'', instead got: '\'ab\''
-Log
-<font color="#CD7F32">s="acac"</font>
-acac
-Expected: '\'bb\'', instead got: '\'ac\''
-Log
-<font color="#CD7F32">s="hheelllloo"</font>
-hheelllloo
-Expected: '\'hello\'', instead got: '\'hheel\''
-Log
-<font color="#CD7F32">s="hheellllo"</font>
-hheellllo
-Expected: '\'hello\'', instead got: '\'hhee\''
- */
