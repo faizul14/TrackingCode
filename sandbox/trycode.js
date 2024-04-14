@@ -124,6 +124,27 @@ console.log(
 );
 
 
+console.log(
+    // Math.pow(5, 2),
+    // 11 * 23,
+    // 253 / 11
+    /[.]/g.test('1.1')
+);
+
+console.log(
+    Math.ceil(1.9),
+    Math.sqrt(16)
+);
+
+console.log(
+    24 % 12
+);
+
+
+
+
+
+
 
 
 
