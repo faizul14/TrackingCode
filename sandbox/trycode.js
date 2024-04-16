@@ -141,10 +141,42 @@ console.log(
 );
 
 const arr = [1, 2, 3, 4, 5]
-arr.splice(3,1)
+arr.splice(3, 1)
 console.log(
     arr
 );
+
+const isPrimeArray = num => {
+    const arr = []
+    let countLoop = 0
+    const length = Math.round(num / 2)
+    for (let i = 2; i <= Math.sqrt(num - 1) + 1; i++) {
+        countLoop++
+        if (num % i === 0) {
+            arr.push(i)
+            break
+        }
+    }
+    console.log(arr.length !== 0 ? arr : `${num} is prime`);
+    console.log(`Lopping count ${countLoop} times`);
+
+}
+
+console.log(
+    isPrimeArray(
+        // 5099
+        // 50
+        624450121
+    )
+);
+
+console.log(
+    Math.round(75 / 2),
+    75 % 38,
+    Math.round(38 / 2),
+    Math.sqrt(624450121)
+);
+
 
 
 
