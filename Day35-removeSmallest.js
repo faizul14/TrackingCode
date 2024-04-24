@@ -16,6 +16,19 @@ function removeSmallest(numbers) {
     return numbersResult
 }
 
+// const removeSmallest = number => {
+//     const min = Math.min(...number)
+//     let indexRemove = 0
+//     for (let i = 0; i < number.length; i++) {
+//         if (number[i] === min) {
+//             indexRemove = i
+//             break
+//         }
+//     }
+//     number.splice(indexRemove, 1)
+//     return number
+// }
+
 
 console.log(
     removeSmallest(
