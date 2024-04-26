@@ -95,88 +95,94 @@
 // );
 
 
-const resultChar = (charOne, charTwo) => {
-    const findMinimum = charOne < charTwo ? charOne : charTwo
-    let countChar = Math.abs(charValue(charOne) - charValue(charTwo)) + 1
-    countChar = Math.ceil(countChar / 2)
-    console.log(countChar);
+// const resultChar = (charOne, charTwo) => {
+//     const findMinimum = charOne < charTwo ? charOne : charTwo
+//     let countChar = Math.abs(charValue(charOne) - charValue(charTwo)) + 1
+//     countChar = Math.ceil(countChar / 2)
+//     console.log(countChar);
 
 
-    console.log(
-        charValue(findMinimum) + countChar - 1,
-        String.fromCharCode(charValue(findMinimum) + countChar - 1 + 96)
-    );
+//     console.log(
+//         charValue(findMinimum) + countChar - 1,
+//         String.fromCharCode(charValue(findMinimum) + countChar - 1 + 96)
+//     );
 
-    return String.fromCharCode(97)
-}
+//     return String.fromCharCode(97)
+// }
 
-const charValue = char => {
-    return char.charCodeAt() - 96
-}
+// const charValue = char => {
+//     return char.charCodeAt() - 96
+// }
+
+// console.log(
+//     // charValue('a')
+//     // resultChar('j', 'a'),
+//     // resultChar('l', 'o'),
+//     // resultChar('t', 'f'),
+//     // resultChar('k', 'n')
+//     resultChar('a', 'a')
+// );
+
+
+// console.log(
+//     // Math.pow(5, 2),
+//     // 11 * 23,
+//     // 253 / 11
+//     /[.]/g.test('1.1')
+// );
+
+// console.log(
+//     Math.ceil(1.9),
+//     Math.sqrt(16)
+// );
+
+// console.log(
+//     24 % 12
+// );
+
+// const arr = [1, 2, 3, 4, 5]
+// arr.splice(3, 1)
+// console.log(
+//     arr
+// );
+
+// const isPrimeArray = num => {
+//     const arr = []
+//     let countLoop = 0
+//     const length = Math.round(num / 2)
+//     for (let i = 2; i <= Math.sqrt(num - 1) + 1; i++) {
+//         countLoop++
+//         if (num % i === 0) {
+//             arr.push(i)
+//             break
+//         }
+//     }
+//     console.log(arr.length !== 0 ? arr : `${num} is prime`);
+//     console.log(`Lopping count ${countLoop} times`);
+
+// }
+
+// console.log(
+//     isPrimeArray(
+//         // 5099
+//         // 50
+//         624450121
+//     )
+// );
+
+// console.log(
+//     Math.round(75 / 2),
+//     75 % 38,
+//     Math.round(38 / 2),
+//     Math.sqrt(624450121)
+// );
+
+const arr = ['18', '81', '144']
 
 console.log(
-    // charValue('a')
-    // resultChar('j', 'a'),
-    // resultChar('l', 'o'),
-    // resultChar('t', 'f'),
-    // resultChar('k', 'n')
-    resultChar('a', 'a')
-);
-
-
-console.log(
-    // Math.pow(5, 2),
-    // 11 * 23,
-    // 253 / 11
-    /[.]/g.test('1.1')
-);
-
-console.log(
-    Math.ceil(1.9),
-    Math.sqrt(16)
-);
-
-console.log(
-    24 % 12
-);
-
-const arr = [1, 2, 3, 4, 5]
-arr.splice(3, 1)
-console.log(
+    arr.sort((a, b) => a - b),
     arr
 );
-
-const isPrimeArray = num => {
-    const arr = []
-    let countLoop = 0
-    const length = Math.round(num / 2)
-    for (let i = 2; i <= Math.sqrt(num - 1) + 1; i++) {
-        countLoop++
-        if (num % i === 0) {
-            arr.push(i)
-            break
-        }
-    }
-    console.log(arr.length !== 0 ? arr : `${num} is prime`);
-    console.log(`Lopping count ${countLoop} times`);
-
-}
-
-console.log(
-    isPrimeArray(
-        // 5099
-        // 50
-        624450121
-    )
-);
-
-console.log(
-    Math.round(75 / 2),
-    75 % 38,
-    Math.round(38 / 2),
-    Math.sqrt(624450121)
-);
-
 
 
 
