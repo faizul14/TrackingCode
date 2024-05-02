@@ -8,7 +8,7 @@
 //     return [ages[ages.length - 2], ages[ages.length - 1]]
 // }
 
-const twoOldestAges = (ages) => ages.sort((a, b) => a - b).splice(-2)
+const twoOldestAges = (ages) => ages.sort((a, b) => a - b).slice(-2)
 
 console.log(
     twoOldestAges(
