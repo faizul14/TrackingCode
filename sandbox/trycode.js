@@ -184,9 +184,10 @@
 //     arr
 // );
 
-const n = 10
+let n = 10
+n = n.toString(2)
 console.log(
-    n.toString(2)
+    n.split('0').filter(a => a === '1')
 );
 
 
