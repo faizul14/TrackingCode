@@ -177,11 +177,16 @@
 //     Math.sqrt(624450121)
 // );
 
-const arr = ['18', '81', '144']
+// const arr = ['18', '81', '144']
 
+// console.log(
+//     arr.sort((a, b) => a - b),
+//     arr
+// );
+
+const n = 10
 console.log(
-    arr.sort((a, b) => a - b),
-    arr
+    n.toString(2)
 );
 
 
