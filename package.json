@@ -1,0 +1,18 @@
+{
+  "name": "trackingcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Day1-boolToWord.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.1.0"
+  }
+}
