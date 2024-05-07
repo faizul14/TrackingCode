@@ -184,12 +184,19 @@
 //     arr
 // );
 
-let n = 10
-n = n.toString(2)
-console.log(
-    n.split('0').filter(a => a === '1')
-);
+// let n = 10
+// n = n.toString(2)
+// console.log(
+//     n.split('0').filter(a => a === '1')
+// );
 
+
+const index = [1, 2, 3, 4, 5, 6]
+const aa = 'abcd'
+console.log(
+    index.indexOf(5),
+    aa.indexOf('b')
+);
 
 
 
