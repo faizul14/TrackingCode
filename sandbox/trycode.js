@@ -191,12 +191,23 @@
 // );
 
 
-const index = [1, 2, 3, 4, 5, 6]
-const aa = 'abcd'
-console.log(
-    index.indexOf(5),
-    aa.indexOf('b')
-);
+// const index = [1, 2, 3, 4, 5, 6]
+// const aa = 'abcd'
+// console.log(
+//     index.indexOf(5),
+//     aa.indexOf('b')
+// );
+
+
+const regex = new RegExp('[)|D]','')
+const arrSimel = [':)', ';(', ';}', ':-D']
+let count  = 0
+for (let i = 0; i < arrSimel.length; i++) {
+    if (regex.test(arrSimel[i])){
+        console.log(arrSimel[i]);
+        
+    }
+}
 
 
 
