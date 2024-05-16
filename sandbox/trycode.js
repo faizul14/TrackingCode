@@ -199,15 +199,20 @@
 // );
 
 
-const regex = new RegExp('[)|D]','')
-const arrSimel = [':)', ';(', ';}', ':-D']
-let count  = 0
-for (let i = 0; i < arrSimel.length; i++) {
-    if (regex.test(arrSimel[i])){
-        console.log(arrSimel[i]);
+// const regex = new RegExp('[)|D]','')
+// const arrSimel = [':)', ';(', ';}', ':-D']
+// let count  = 0
+// for (let i = 0; i < arrSimel.length; i++) {
+//     if (regex.test(arrSimel[i])){
+//         console.log(arrSimel[i]);
         
-    }
-}
+//     }
+// }
+
+console.log(
+    Math.sqrt(30)
+);
+
 
 
 
