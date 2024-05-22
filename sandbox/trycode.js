@@ -205,17 +205,56 @@
 // for (let i = 0; i < arrSimel.length; i++) {
 //     if (regex.test(arrSimel[i])){
 //         console.log(arrSimel[i]);
-        
+
 //     }
 // }
 
+// console.log(
+//     Math.sqrt(30)
+// );
+
+
+// return true if matrix valid other tah false
+const solution = sol => {
+    const validMatrix = checkValidMatrix(sol)
+    const validRowAndColumn = checkValue(sol)
+    validRowAndColumn
+    return validMatrix && validRowAndColumn
+}
+
+const checkValidMatrix = m => {
+    const mLength = m.length
+
+    for (let i = 0; i < m.length; i++) {
+        if (mLength !== m[i].length) {
+            return false
+        }
+    }
+    return true
+}
+
+const checkValue = m => {
+    const valueIndexZero = m[0]
+    for (let i = 1; i < m.length; i++) {
+        for (let j = 0; j < valueIndexZero.length; j++) {
+            if (m[i].includes(valueIndexZero[j])) {
+                break
+            }
+
+            if (j === valueIndexZero.length - 1) {
+                return false
+            }
+        }
+    }
+    return true
+}
+
+
 console.log(
-    Math.sqrt(30)
+    solution(
+        [[1, 2, 3], [3, 1, 2], [2, 1, 3]]
+    )
 );
-
-
-
-
 
 
 
