@@ -214,47 +214,72 @@
 // );
 
 
-// return true if matrix valid other tah false
-const solution = sol => {
-    const validMatrix = checkValidMatrix(sol)
-    const validRowAndColumn = checkValue(sol)
-    validRowAndColumn
-    return validMatrix && validRowAndColumn
-}
-
-const checkValidMatrix = m => {
-    const mLength = m.length
-
-    for (let i = 0; i < m.length; i++) {
-        if (mLength !== m[i].length) {
-            return false
-        }
-    }
-    return true
-}
-
-const checkValue = m => {
-    const valueIndexZero = m[0]
-    for (let i = 1; i < m.length; i++) {
-        for (let j = 0; j < valueIndexZero.length; j++) {
-            if (m[i].includes(valueIndexZero[j])) {
-                break
-            }
-
-            if (j === valueIndexZero.length - 1) {
-                return false
-            }
-        }
-    }
-    return true
-}
-
-
 console.log(
-    solution(
-        [[1, 2, 3], [3, 1, 2], [2, 1, 3]]
-    )
+    1000-(1000*0.18)+(1000*0.05),
+    50*0.18,
+    50-9
 );
+
+
+
+// return true if matrix valid other tah false
+// const solution = sol => {
+//     const validMatrix = checkValidMatrix(sol)
+//     const validRowAndColumn = checkValue(sol)
+//     validRowAndColumn
+//     return validMatrix && validRowAndColumn
+// }
+
+// const checkValidMatrix = m => {
+//     const mLength = m.length
+
+//     for (let i = 0; i < m.length; i++) {
+//         if (mLength !== m[i].length) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+
+// const checkValue = m => {
+//     const valueIndexZero = m[0]
+//     for (let i = 1; i < m.length; i++) {
+//         for (let j = 0; j < valueIndexZero.length; j++) {
+//             if (m[i].includes(valueIndexZero[j])) {
+//                 break
+//             }
+
+//             if (j === valueIndexZero.length - 1) {
+//                 return false
+//             }
+//         }
+//     }
+//     return true
+// }
+
+
+
+
+// console.log(
+//     solution(
+//         [[1, 2, 3], [3, 1, 2], [2, 1, 3]]
+//     )
+// );
+
+
+// follow the pattern
+
+// const solution = (pattern, s) => {
+//     pattern = pattern.split('')
+//     // const patternIdentity = pattern.map((el, index, _) => )
+//     // patternIdentity
+// }
+
+// console.log(
+//     solution(
+//         'abba', 'cat zebra zebra cat'
+//     )
+// );
 
 
 
