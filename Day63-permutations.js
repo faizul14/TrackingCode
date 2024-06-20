@@ -9,3 +9,6 @@ function permutations(string) {
 console.log(
     'aabb'
 );
+
+// insight
+// https://stackoverflow-com.translate.goog/questions/9960908/permutations-in-javascript?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc
