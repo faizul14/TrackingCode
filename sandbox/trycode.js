@@ -283,8 +283,13 @@
 
 
 
+// console.log(
+//     Math.floor(Math.random() * 10)
+// );
+
 console.log(
-    Math.floor(Math.random() * 10)
+    'aa 89'.match(/[0-9]/g),
+    /[0-9]/g.test('aa 89')
 );
 
 
