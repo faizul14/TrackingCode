@@ -287,10 +287,22 @@
 //     Math.floor(Math.random() * 10)
 // );
 
+// console.log(
+//     'aa 89'.match(/[0-9]/g),
+//     /[0-9]/g.test('aa 89')
+// );
+const objTest = {
+    'a': 'a',
+    'b': 'b'
+}
 console.log(
-    'aa 89'.match(/[0-9]/g),
-    /[0-9]/g.test('aa 89')
+    // 'hey boss'.replace(/ /g, '').split('').sort((a,b) => a.charCodeAt() - b.charCodeAt())
+    // 'a'.charCodeAt()
+    // 'aaa'.match(/a/g).length
+    objTest.b,
+    'aabbjj'.includes('a')
 );
+
 
 
 
