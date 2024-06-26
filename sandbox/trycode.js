@@ -291,17 +291,23 @@
 //     'aa 89'.match(/[0-9]/g),
 //     /[0-9]/g.test('aa 89')
 // );
-const objTest = {
-    'a': 'a',
-    'b': 'b'
-}
-console.log(
-    // 'hey boss'.replace(/ /g, '').split('').sort((a,b) => a.charCodeAt() - b.charCodeAt())
-    // 'a'.charCodeAt()
-    // 'aaa'.match(/a/g).length
-    objTest.b,
-    'aabbjj'.includes('a')
-);
+// const objTest = {
+//     'a': 'a',
+//     'b': 'b'
+// }
+// console.log(
+//     // 'hey boss'.replace(/ /g, '').split('').sort((a,b) => a.charCodeAt() - b.charCodeAt())
+//     // 'a'.charCodeAt()
+//     // 'aaa'.match(/a/g).length
+//     objTest.b,
+//     'aabbjj'.includes('a')
+// );
+
+let data = [1, 1, 2, 3, 4, 2, 5]
+// data = data.indexOf(5)
+
+console.log(data);
+
 
 
 
