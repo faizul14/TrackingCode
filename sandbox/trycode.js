@@ -303,10 +303,15 @@
 //     'aabbjj'.includes('a')
 // );
 
-let data = [1, 1, 2, 3, 4, 2, 5]
-// data = data.indexOf(5)
+// let data = [1, 1, 2, 3, 4, 2, 5]
+// // data = data.indexOf(5)
 
-console.log(data);
+// console.log(data);
+
+console.log(
+    'a'.charCodeAt() - 96
+);
+
 
 
 
