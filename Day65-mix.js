@@ -2,7 +2,7 @@
 // Day 65/366 => Need Fixing
 // https://www.codewars.com/kata/5629db57620258aa9d000014/
 
-const removeUpperCase = word => word
+const removeNotLowerCase = word => word
     .replace(/[^a-z]/g, '')
 
 const shortWord = word => word
@@ -51,9 +51,11 @@ const formatReturn = (s1, s2) => {
 
 function mix(s1, s2) {
     // your code
-    s1 = removeUpperCase(s1)
-    s2 = removeUpperCase(s2)
+    s1 = removeNotLowerCase(s1)
+    s1
+    s2 = removeNotLowerCase(s2)
     s1 = shortWord(s1)
+    s1
     s2 = shortWord(s2)
     s1 = proccesWord(s1, 1)
     s2 = proccesWord(s2, 2)
