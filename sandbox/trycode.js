@@ -308,9 +308,23 @@
 
 // console.log(data);
 
-console.log(
-    'a'.charCodeAt() - 96
-);
+// console.log(
+//     'a'.charCodeAt() - 96
+// );
+
+// Try data collection SET
+// const sampleSetDataCollection = () => {
+//     // const dataDay = [...new Set(['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'senin'])]
+//     const hari = 'senin selasa rabu kamis jumat sabtu minggu senin selasa rabu rabu'
+//     const dataDay = new Set(hari.split(' '))
+//     dataDay.add('apalgi ya')
+//     dataDay.add('senin')
+//     return dataDay
+// }
+
+// console.log(
+//     sampleSetDataCollection()
+// );
 
 
 
