@@ -327,6 +327,20 @@
 // );
 
 
+const triAngle = (n) => {
+    let result = ''
+    let idx = 1
+    while(idx <= n){
+        result = result.concat(`${'*'.repeat(idx)} \n`)
+        idx++
+    }
+    result
+    return result
+}
+
+console.log(
+    triAngle(3)
+);
 
 
 
