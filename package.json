@@ -1,0 +1,18 @@
+{
+  "name": "trackingcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Day1-boolToWord.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

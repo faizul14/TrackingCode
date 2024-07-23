@@ -335,7 +335,7 @@ const triAngle = (n) => {
         idx++
     }
     result
-    return result
+    return result.length
 }
 
 console.log(

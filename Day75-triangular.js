@@ -20,7 +20,7 @@ function triangular(n) {
 }
 
 // this solution with optimation
-const triangular = n => n > 0 ? (n * (n + 1) / 2) : 0
+// const triangular = n => n > 0 ? (n * (n + 1) / 2) : 0
 
 let startDate = new Date()
 console.log(
@@ -34,3 +34,4 @@ console.log(`Time : ${endDate - startDate}`);
 
 // const factorial = n => n ? n * factorial(n - 1) : 1
 
+module.exports = { triangular }
