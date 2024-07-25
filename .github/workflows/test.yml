@@ -3,7 +3,7 @@ name: Unit Tests
 on:
   push:
     branches:
-      - UnitTest
+      - TestCase
   pull_request:
     branches: [UnitTest]
 
