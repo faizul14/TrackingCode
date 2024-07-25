@@ -5,7 +5,7 @@ on:
     branches:
       - TestCase
   pull_request:
-    branches: [TestCase]
+    branches: [UnitTest]
 
 jobs:
   Jest:
