@@ -342,6 +342,11 @@ console.log(
     triAngle(3)
 );
 
+console.log(
+    Math.pow(11, 2),
+    Math.sqrt(121)
+);
+
 
 
 
