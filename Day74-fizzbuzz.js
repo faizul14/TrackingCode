@@ -25,6 +25,7 @@ function fizzbuzz(n) {
 }
 
 console.log(
-    fizzbuzz(3)
+    fizzbuzz(10)
 );
 
+module.exports = { fizzbuzz }
