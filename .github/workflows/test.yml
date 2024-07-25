@@ -5,10 +5,11 @@ on:
     branches:
       - UnitTest
   pull_request:
-    branches: [master]
+    branches: [UnitTest]
 
 jobs:
   Jest:
+    name: Run Test Case
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
