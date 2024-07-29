@@ -330,7 +330,7 @@
 const triAngle = (n) => {
     let result = ''
     let idx = 1
-    while(idx <= n){
+    while (idx <= n) {
         result = result.concat(`${'*'.repeat(idx)} \n`)
         idx++
     }
@@ -353,6 +353,14 @@ console.log(
     eval('1+2')
 );
 
+
+const fibonacci = n => {
+    if (n < 2) return n
+    
+    return n + fibonacci(n - 1)
+}
+
+console.log(fibonacci(4));
 
 
 
