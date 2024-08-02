@@ -356,7 +356,7 @@ console.log(
 
 const fibonacci = n => {
     if (n < 2) return n
-    
+
     return n + fibonacci(n - 1)
 }
 
@@ -366,6 +366,12 @@ console.log(fibonacci(4));
 
 
 
+const array = { name: 'Faezol' }
+array.fullname = `${array.name} MP`
+
+console.log(
+    array.fullname
+);
 
 
 
