@@ -378,3 +378,11 @@ console.log(
 );
 
 
+
+console.log(
+    'aku# ini 98=-'.match(/[a-z]/gi),
+    'aku# i#ni 98=-'.match(/[a-z]#/gi)
+
+);
+
+
