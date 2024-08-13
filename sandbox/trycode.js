@@ -386,3 +386,19 @@ console.log(
 );
 
 
+// ("1 2 3 4 5 6 9 8 7 6 5 4 ", 6)-- > "2 3 4 5 6 1 8 7 6 5 4 9"
+let digit = '123456'
+let aee = [...digit]
+console.log(aee);
+
+console.log((1 + 2 + 3 + 4 + 5 + 6) % 2);
+
+
+let arrr = '1234567890'
+
+arrr = arrr.split()
+
+console.log(
+    arrr
+);
+
