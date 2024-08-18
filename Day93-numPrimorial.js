@@ -24,5 +24,5 @@ function numPrimorial(n) {
 }
 
 console.log(
-    numPrimorial(3)
+    numPrimorial(9)
 );
