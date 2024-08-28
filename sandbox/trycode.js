@@ -420,3 +420,10 @@ console.log(
     (1930.6 - ((2.0 / 100) * 1930.6)),
     (7722.4 - ((2.0 / 100) * 7722.4)) - (1930.6 - ((2.0 / 100) * 1930.6)) - 3000,
 );
+
+let testHello = 'Hello'
+testHello = testHello.replace(new RegExp(testHello.charAt(1), 'g'), testHello.charAt(testHello.length - 1))
+console.log(
+    'H'.charCodeAt(),
+    testHello
+);
