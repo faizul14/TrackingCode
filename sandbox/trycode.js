@@ -427,3 +427,9 @@ console.log(
     'H'.charCodeAt(),
     testHello
 );
+
+
+console.log(
+    // (2 ** 5) * (5) * (7 ** 2) * (11)
+    2695 % 5
+);
