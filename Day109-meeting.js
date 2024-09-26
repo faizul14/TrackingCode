@@ -4,33 +4,15 @@
 
 const sortByFirstName = data => {
     const resultAfterSort = []
-    //     data.map((el, idx, arr) => {
-    //         if (data.length !== arr.length && arr[idx][0].charCodeAt() === arr[idx + 1][0].charCodeAt()) {
-    //             // const ekstrak = [arr[idx], arr[idx + 1]].sort((a, b) => b[1].charCodeAt() - a[1].charCodeAt())
-    //             resultAfterSort.push(el)
-    //         } else {
-    //             // resultAfterSort.push(el)
-    //         }
-    //     })
-    //     resultAfterSort
-    //     return resultAfterSort
     let temp = []
     data.map((el, idx, arr) => {
         temp.push(el)
         if ((idx !== arr.length - 1) && el !== temp[temp.length - 1] && el[0].charCodeAt() === temp[temp.length - 1][0].charCodeAt()) {
             temp.push(el)
+        }else{
+            resultAfterSort.push(temp)
+            // temp = []
         }
-
-
-
-        // if (temp.length > 0) {
-        //     temp.sort((a, b) => a[1].charCodeAt() - b[1].charCodeAt())
-        //     // temp = []
-        // }
-
-        // if ((idx !== arr.length - 1) && el[0].charCodeAt() !== arr[idx + 1][0].charCodeAt()) {
-        //     temp = []
-        // }
     })
 
     temp
