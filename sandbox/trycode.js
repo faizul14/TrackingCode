@@ -433,3 +433,7 @@ console.log(
     // (2 ** 5) * (5) * (7 ** 2) * (11)
     2695 % 5
 );
+
+const testInceremnt = 000 + 1
+console.log(testInceremnt);
+
