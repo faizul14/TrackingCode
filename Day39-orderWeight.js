@@ -2,76 +2,103 @@
 // Day 39/366 => need time to fixing
 // https://www.codewars.com/kata/55c6126177c9441a570000cc/
 
-const sumElemen = value => value.length !== 0 ? value.split('').map(el => parseInt(el)).reduce((acc, el) => acc += el) : value
+// const sumElemen = value => value.length !== 0 ? value.split('').map(el => parseInt(el)).reduce((acc, el) => acc += el) : value
+// const short = (a, b) => {
+//     const min = parseInt(a) < parseInt(b) ? a.length : b.length
+//     let arrHelper = a.length === min ? b.split('') : a.split('')
+
+//     arrHelper = arrHelper.splice(0, min).join('')
+
+//     const valueA = a.length === min ? a : arrHelper
+//     const valueB = b.length === min ? b : arrHelper
+
+//     const objHelper = [
+//         {
+//             valueOriginal: a,
+//             valueForSort: valueA
+//         },
+//         {
+//             valueOriginal: b,
+//             valueForSort: valueB
+//         }
+//     ]
+//     objHelper.sort((a, b) => a.valueForSort - b.valueForSort)
+//     return [objHelper[0].valueOriginal, objHelper[1].valueOriginal]
+// }
+
+
+
+// function orderWeight(strng) {
+//     // your code
+//     strng = strng.split(' ')
+//     // strng.sort((a, b) => parseInt(a) - parseInt(b))
+//     const arrayOrderObject = []
+//     const result = []
+
+//     for (let i = 0; i < strng.length; i++) {
+//         arrayOrderObject.push(
+//             {
+//                 valueOriginal: strng[i],
+//                 valueWeight: sumElemen(strng[i])
+//             }
+//         )
+//     }
+//     // arrayOrderObject
+//     arrayOrderObject.sort((a, b) => a.valueWeight - b.valueWeight)
+//     arrayOrderObject
+
+//     for (let i = 0; i < arrayOrderObject.length - 1; i++) {
+//         const arrHelper = []
+//         if (arrayOrderObject[i].valueWeight === arrayOrderObject[i + 1].valueWeight) {
+//             arrHelper.push(...[arrayOrderObject[i], arrayOrderObject[i + 1]])
+
+//             arrHelper.sort((a, b) => a.valueOriginal[0] - b.valueOriginal[0])
+//             // arrHelper
+//             arrayOrderObject.splice(i, 2)
+//             arrayOrderObject.splice(i, 0, ...arrHelper)
+//             // arrayOrderObject
+//         }
+//     }
+
+
+//     arrayOrderObject.map(el => result.push(el.valueOriginal))
+
+//     for (let i = 0; i < result.length - 1; i++) {
+//         if (sumElemen(result[i]) === sumElemen(result[i + 1])) {
+//             const helper = short(result[i], result[i + 1])
+//             result.splice(i, 2, ...helper)
+//             // result.splice(i + 1, 1, helper[1])
+//         }
+//     }
+
+//     return result.join(' ')
+// }
+
+// after fixing
+const sumElemen = value => value.split('').reduce((acc, el) => acc + parseInt(el), 0);
+
 const short = (a, b) => {
-    const min = parseInt(a) < parseInt(b) ? a.length : b.length
-    let arrHelper = a.length === min ? b.split('') : a.split('')
-
-    arrHelper = arrHelper.splice(0, min).join('')
-
-    const valueA = a.length === min ? a : arrHelper
-    const valueB = b.length === min ? b : arrHelper
-
-    const objHelper = [
-        {
-            valueOriginal: a,
-            valueForSort: valueA
-        },
-        {
-            valueOriginal: b,
-            valueForSort: valueB
-        }
-    ]
-    objHelper.sort((a, b) => a.valueForSort - b.valueForSort)
-    return [objHelper[0].valueOriginal, objHelper[1].valueOriginal]
-}
-
-
+    if (a < b) return [a, b];
+    return [b, a];
+};
 
 function orderWeight(strng) {
-    // your code
-    strng = strng.split(' ')
-    // strng.sort((a, b) => parseInt(a) - parseInt(b))
-    const arrayOrderObject = []
-    const result = []
+    // Pisahkan string menjadi array berdasarkan spasi
+    const arrayOrderObject = strng.split(' ').map(value => ({
+        valueOriginal: value,
+        valueWeight: sumElemen(value)
+    }));
 
-    for (let i = 0; i < strng.length; i++) {
-        arrayOrderObject.push(
-            {
-                valueOriginal: strng[i],
-                valueWeight: sumElemen(strng[i])
-            }
-        )
-    }
-    // arrayOrderObject
-    arrayOrderObject.sort((a, b) => a.valueWeight - b.valueWeight)
-    arrayOrderObject
-
-    for (let i = 0; i < arrayOrderObject.length - 1; i++) {
-        const arrHelper = []
-        if (arrayOrderObject[i].valueWeight === arrayOrderObject[i + 1].valueWeight) {
-            arrHelper.push(...[arrayOrderObject[i], arrayOrderObject[i + 1]])
-
-            arrHelper.sort((a, b) => a.valueOriginal[0] - b.valueOriginal[0])
-            // arrHelper
-            arrayOrderObject.splice(i, 2)
-            arrayOrderObject.splice(i, 0, ...arrHelper)
-            // arrayOrderObject
+    // Urutkan berdasarkan bobot, jika bobot sama urutkan berdasarkan urutan alfabetis
+    arrayOrderObject.sort((a, b) => {
+        if (a.valueWeight === b.valueWeight) {
+            return a.valueOriginal.localeCompare(b.valueOriginal);
         }
-    }
+        return a.valueWeight - b.valueWeight;
+    });
 
-
-    arrayOrderObject.map(el => result.push(el.valueOriginal))
-
-    for (let i = 0; i < result.length - 1; i++) {
-        if (sumElemen(result[i]) === sumElemen(result[i + 1])) {
-            const helper = short(result[i], result[i + 1])
-            result.splice(i, 2, ...helper)
-            // result.splice(i + 1, 1, helper[1])
-        }
-    }
-
-    return result.join(' ')
+    // Kembalikan hasil dalam bentuk string yang diurutkan dengan spasi
+    return arrayOrderObject.map(el => el.valueOriginal).join(' ');
 }
 
 // 13 105 170 109 163 28 191 29 85 68 12…
