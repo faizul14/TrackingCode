@@ -437,3 +437,10 @@ console.log(
 const testInceremnt = 000 + 1
 console.log(testInceremnt);
 
+console.log(
+    1234567 % 13,
+    87 % 13,
+    9 % 2,
+    Math.pow(10, 3) % 13
+);
+
