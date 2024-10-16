@@ -444,3 +444,8 @@ console.log(
     Math.pow(10, 3) % 13
 );
 
+console.log(
+    MORSE_CODE['.']
+);
+
+
