@@ -444,8 +444,16 @@ console.log(
     Math.pow(10, 3) % 13
 );
 
+// console.log(
+//     MORSE_CODE['.']
+// );
+
+
+// substring(start, end) => this method string for get sub string
+const digits = '123456789'
+const getFourDigits = digits.substring(0, 4)
 console.log(
-    MORSE_CODE['.']
+    getFourDigits
 );
 
 
