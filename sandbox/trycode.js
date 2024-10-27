@@ -457,3 +457,10 @@ console.log(
 );
 
 
+const removeWiteSpace = "  Trim   "
+
+console.log(
+    removeWiteSpace.trim(),
+    removeWiteSpace.trimStart(),
+    removeWiteSpace.trimEnd(),
+);
