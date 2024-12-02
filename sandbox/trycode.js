@@ -464,3 +464,27 @@ console.log(
     removeWiteSpace.trimStart(),
     removeWiteSpace.trimEnd(),
 );
+
+
+const go = n => {
+    let s = 0
+    let f = 1
+    for (let i = 2; i <= n; i++) {
+        i
+        if (n % i === 0) {
+            i
+            if ((i - f) > s) {
+                s
+                s = i - f
+            }
+            f
+            f = i
+            f
+        }
+    }
+    return s
+}
+
+console.log(
+    go(17)
+);
