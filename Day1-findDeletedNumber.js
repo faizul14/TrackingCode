@@ -1,5 +1,5 @@
 // FMP Track Coding Chalenge 2025
-// Day 1/366
+// Day 1/365
 // https://www.codewars.com/kata/595aa94353e43a8746000120/
 
 function findDeletedNumber(arr, mixArr) {
