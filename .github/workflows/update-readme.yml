@@ -1,0 +1,41 @@
+name: Update README with File Count
+
+on:
+  push:
+    branches:
+      - main # Ganti dengan nama branch Anda jika berbeda
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout kode repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Hitung jumlah file
+      - name: Count files
+        id: file_count
+        run: |
+          file_count=$(find . -type f | wc -l)
+          echo "count=${file_count}" >> $GITHUB_ENV
+
+      # Update README.md
+      - name: Update README.md
+        run: |
+          count=$(cat $GITHUB_ENV | grep "count" | cut -d'=' -f2)
+          if grep -q "Total Files:" README.md; then
+            sed -i "s/Total Files: [0-9]\+/Total Files: $count/" README.md
+          else
+            echo "\nTotal Files: $count" >> README.md
+          fi
+
+      # Commit perubahan ke repository
+      - name: Commit changes
+        run: |
+          git config user.name secrets.USER_NAME
+          git config user.email secrets.USER_EMAIL
+          git add README.md
+          git commit -m "Update README with file count"
+          git push
