@@ -33,9 +33,11 @@ jobs:
 
       # Commit perubahan ke repository
       - name: Commit changes
+        env:
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: |
-          git config user.name secrets.USER_NAME
-          git config user.email secrets.USER_EMAIL
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update README with file count"
-          git push
+          git commit -m "Update README with file count" || echo "No changes to commit"
+          git push https://x-access-token:${SECRET_TOKEN}@github.com/${{ github.repository }}.git
