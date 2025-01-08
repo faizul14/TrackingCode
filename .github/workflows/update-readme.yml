@@ -3,7 +3,7 @@ name: Update README with File Count
 on:
   push:
     branches:
-      - main # Ganti dengan nama branch Anda jika berbeda
+      - poc-automate # Ganti dengan nama branch Anda jika berbeda
 
 jobs:
   update-readme:
