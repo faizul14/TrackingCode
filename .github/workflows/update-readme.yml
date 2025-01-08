@@ -33,7 +33,7 @@ jobs:
       - name: Update README.md
         run: |
           count=${FILE_COUNT}
-          badge="![Total Files](https://img.shields.io/badge/Total_Files-$count-blue)"
+          badge="![Total Files](https://img.shields.io/badge/Total_Files-$count-red)"
           if grep -q "![Total Files]" README.md; then
             sed -i "s|!\[Total Files\](.*)|$badge|" README.md
           else
