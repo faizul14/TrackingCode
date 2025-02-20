@@ -28,6 +28,30 @@ var reverseVowels = function (s) {
     return result.join('')
 };
 
+var reverseVowels = function (s) {
+    const vowel = new Set('aiueoAIUEO')
+    let left = 0
+    let right = s.length - 1
+    let res = s.split('')
+
+    while (left < right) {
+        if (!vowel.has(res[left])) {
+            left++
+            continue
+        }
+        if (!vowel.has(res[right])) {
+            right--
+            continue
+        }
+
+        [res[left], res[right]] = [res[right], res[left]]
+
+        left++
+        right--
+    }
+    return res.join('')
+};
+
 console.log(
     reverseVowels('kkkk'),
     reverseVowels('IceCreAm'),
