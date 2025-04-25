@@ -488,3 +488,12 @@ const go = n => {
 console.log(
     go(17)
 );
+
+const tryRegex = url => {
+    let urlMod = url.match(/(?:http(?:s)?:\/\/)/i)[0]
+    urlMod
+}
+
+console.log(
+    tryRegex('http://google.com')
+);
