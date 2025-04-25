@@ -489,11 +489,20 @@ console.log(
     go(17)
 );
 
-const tryRegex = url => {
-    let urlMod = url.match(/(?:http(?:s)?:\/\/)/i)[0]
-    urlMod
+// const tryRegex = url => {
+//     let urlMod = url.match(/(?:http(?:s)?:\/\/)/i)[0]
+//     urlMod
+// }
+
+// console.log(
+//     tryRegex('http://google.com')
+// );
+
+const towerCheck = nFloor => {
+    const arr = [...Array(nFloor)].map((_, i) => ' '.repeat(nFloor - i - 1) + '*'.repeat(i * 2 + 1) + ' '.repeat(nFloor - i - 1))
+    arr
 }
 
 console.log(
-    tryRegex('http://google.com')
+    towerCheck(3)
 );
