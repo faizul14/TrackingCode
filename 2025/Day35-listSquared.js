@@ -32,7 +32,7 @@ function listSquared(m, n) {
 }
 
 console.log(
-    // listSquared(1, 250),
-    listSquared(250, 500)
+    listSquared(1, 250),
+    // listSquared(250, 500)
 );
 
