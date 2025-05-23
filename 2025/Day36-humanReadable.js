@@ -27,9 +27,11 @@ function humanReadable(seconds) {
 
 
 console.log(
-    // humanReadable(85400),
-    // humanReadable(3599),
-    // humanReadable(45296),
-    // humanReadable(86399)
-    humanReadable(59)
+    humanReadable(85400),
+    humanReadable(3599),
+    humanReadable(45296),
+    humanReadable(86399),
+    humanReadable(59),
+    humanReadable(0),
+
 );
