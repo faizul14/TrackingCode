@@ -3,6 +3,7 @@
 // https://www.codewars.com/kata/51edd51599a189fe7f000015/
 
 const solution = function (firstArray, secondArray) {
+    // cara 1
     // const arrSquareOfDiferent = []
 
     // for (let i in firstArray) {
@@ -13,9 +14,20 @@ const solution = function (firstArray, secondArray) {
 
     // return arrSquareOfDiferent.reduce((acc, el) => acc += el) / arrSquareOfDiferent.length
 
+    // cara 2
+    // let result = 0
+
+    // for (let i in firstArray) {
+    //     const dif = Math.abs(firstArray[i] - secondArray[i])
+    //     const squareOfDif = Math.pow(dif, 2)
+    //     result += squareOfDif
+    // }
+    // return result / firstArray.length
+
+    // cara 3
     let result = 0
 
-    for (let i in firstArray) {
+    for (let i = 0; i < firstArray.length; i++) {
         const dif = Math.abs(firstArray[i] - secondArray[i])
         const squareOfDif = Math.pow(dif, 2)
         result += squareOfDif
